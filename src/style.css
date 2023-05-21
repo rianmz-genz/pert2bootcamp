@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    color: white;
+    background-color: #1C1E53;
+  }
+  
+.section-kiri-login {
+    position: relative;
+    height: 100%;
+    max-width: 50%;
+  }
+  .isi-kiri-login{
+    padding-top: 2rem;
+    padding-left: 2.5rem;
+    opacity: 1;
+  }
+
+h1{
+    font-size: 2.5rem;
+    line-height: 4.25rem;
+    width: 70%;
+    opacity: 1;
+    font-weight: 600;
+}
+
+.deskripsi-login{
+    width: 70%;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+img{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    width: 100%;
+    opacity: 0.2;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+}
+
+.section-kanan-login{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 80%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.input-field{
+    width: 95%;
+    padding: 1rem 0rem 1rem 1.5rem;
+    border-radius: 0.25rem;
+    border: rgba(255, 255, 255, 0.3) 1px solid;
+    background-color: transparent;
+    margin: 0.5rem 0rem;
+    color: white;
+    font-family: Poppins;
+}
+.container {
+    display: block;
+    position: relative;
+    margin-top: 0.25rem;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    font-size: .9rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkmark {
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: rgb(0, 4, 255);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 6px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .my-button{
+    background-color: #FCD980;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 1rem 0;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: large;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-family: Poppins;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.9);
+  }
+  footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  section form footer a{
+    color: white;
+    margin-left: 0.5rem;
+  }
